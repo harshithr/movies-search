@@ -18,6 +18,4 @@ app.get("/results", function(req, res){
     });
 });
 
-app.listen(3000, function(){
-    console.log("The movie server has been started at port 3000...");
-});
+app.listen(3000);
