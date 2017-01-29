@@ -2,6 +2,8 @@ var express = require("express");
 var app = express();
 var request = require("request");
 
+var port = process.env.PORT || 3000;
+
 app.set("view engine", "ejs");
 
 app.get("/", function(req, res){
@@ -18,4 +20,4 @@ app.get("/results", function(req, res){
     });
 });
 
-app.listen(3000);
+app.listen(port);
